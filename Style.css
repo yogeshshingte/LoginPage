@@ -13,7 +13,8 @@
   }
 
   .container{
-    padding-top: 20px;
+    padding: 10px;
+    padding-top: 0px;
   }
 
   .box{
@@ -42,9 +43,9 @@
     background: #2c4766;
     border-radius: 8px;
     transform-origin: 128px;
-    transform: scale(2.2) rotate(calc(var(--i)*(360deg / 50)));
+    transform: scale(2.2) rotate(calc(var(--i)*(360deg / 60)));
     animation: animateBlink 3s linear infinite;
-    animation-delay: calc(var(--i)*(3s / 50));
+    animation-delay: calc(var(--i)*(3s / 60));
   }
 
   @keyframes animateBlink{
@@ -60,6 +61,8 @@
     font-size:2em;
     color: #0ef;
     text-align: center;
+    padding-bottom: 20px;
+    font-family: cursive;
   }
   .input-box{
     position: relative;
@@ -95,8 +98,8 @@
     transition: .2s ease;
   }
   
-  /* .input-box input:focus~label,.input-box input:valid~label{*/
-  .input-box input:focus~label {
+  .input-box input:focus~label,.input-box input:valid~label{
+  /* .input-box input:focus~label { */
     top: 1px;
     font-size: .8em;
     color: #0ef;
@@ -117,7 +120,7 @@
   }
   
   .btn{
-    margin: 30px;
+    margin: 20px;
     width: 85%;
     margin-bottom:0px;
     height: 45px;
